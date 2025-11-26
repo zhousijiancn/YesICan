@@ -1,0 +1,17 @@
+/* 适配打印/导出PDF场景 */
+@media print {
+  /* 全局页面设置黑色背景，白色文字 */
+  .markdown-preview-view, .markdown-rendered {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  /* 标题、段落、列表等元素单独适配，避免颜色异常 */
+  h1, h2, h3, h4, h5, h6, p, ul, li, ol, a {
+    color: #fff !important;
+  }
+  /* 代码块样式适配黑色背景 */
+  pre, code, .code-block {
+    background-color: #222 !important;
+    color: #eee !important;
+  }
+}

@@ -1,0 +1,10 @@
+@media print {
+	body {
+		  --code-background: #ccc;
+		  --code-comment: #474;
+		  --code-normal: #227;
+		  --code-function: purple;
+		  --code-property: darkblue;
+		  --code-string: darkgreen;
+	}
+}

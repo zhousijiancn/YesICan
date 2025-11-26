@@ -1,0 +1,27 @@
+/* 新版片段 */
+@media print {
+  /* 确保整个页面内容区域是黑色的 */
+  .markdown-preview-view,
+  .markdown-rendered {
+    background-color: #000 !important;
+    color: #fff !important; /* 文字颜色为白色以确保可读 */
+  }
+
+  /* 确保所有元素的背景都被覆盖 */
+  body,
+  html {
+    background-color: #000 !important;
+  }
+
+  /* 链接、标题等其他元素的颜色也需要单独设置，以防被主题覆盖 */
+  h1, h2, h3, h4, h5, h6,
+  p, a, ul, li, ol, strong, em {
+    color: #fff !important;
+  }
+  
+  /* 代码块样式 */
+  pre, code {
+    background-color: #222 !important;
+    color: #eee !important;
+  }
+}
